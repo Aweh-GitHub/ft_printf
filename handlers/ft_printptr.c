@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 15:11:13 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 22:52:11 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 23:37:51 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 size_t	ft_printptr(va_list *args)
 {
-	unsigned long long int adress;
+	unsigned long long int	adress;
 
 	adress = (unsigned long long int) va_arg(*args, void *);
 	write(1, "0x", 2);
