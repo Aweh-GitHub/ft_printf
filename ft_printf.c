@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 13:25:54 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 16:39:26 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 17:45:01 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,16 @@ static size_t output(char const *format, va_list *args)
 	return (ft_printdefault(format[0]));
 }
 
-void	ft_printf(char const *format, ...)
+int	ft_printf(char const *format, ...)
 {
 	va_list args;
 	size_t i;
+	size_t written;
 
 	va_start(args, format);
 	i = 0;
 	while (format[i])
-		i += output(&format[i], &args);
+		i += output(&format[i], &args), written++;
 	va_end(args);
+	return (written);
 }
