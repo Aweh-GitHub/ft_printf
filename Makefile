@@ -6,11 +6,11 @@
 #    By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/09 16:41:21 by thantoni          #+#    #+#              #
-#    Updated: 2025/11/09 17:36:23 by thantoni         ###   ########.fr        #
+#    Updated: 2025/11/09 17:38:41 by thantoni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = printf.a
+NAME = libftprintf.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
