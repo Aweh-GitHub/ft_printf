@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 15:06:47 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 16:10:01 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 20:27:16 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 size_t	ft_printstr(va_list *args)
 {
 	char	*str;
-	size_t	i;
+	size_t	str_len;
 
 	str = va_arg(*args, char *);
-	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	return (2);
+	if (str == NULL)
+		return (write(1, "(null)", 6), 6);
+	str_len = 0;
+	while (str[str_len])
+		str_len++;
+	write(1, str, str_len);
+	return (str_len);
 }

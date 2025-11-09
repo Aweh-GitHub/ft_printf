@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 13:28:12 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 16:39:07 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 22:53:19 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@
 # define FORMAT_HEX_UPR 'X'
 # define FORMAT_PERCENT '%'
 
-void ft_putbase_unsigned(unsigned long udec, char const *base);
-void ft_putbase(long dec, char const *base);
+size_t ft_putbase_unsigned(unsigned long long int udec, char const *base);
+size_t ft_putbase(long long int dec, char const *base);
 
 size_t	ft_printdefault(char c);
 size_t	ft_printchar(va_list *args);
@@ -41,6 +41,6 @@ size_t	ft_printhexlow(va_list *args);
 size_t	ft_printhexupr(va_list *args);
 size_t	ft_printpercent();
 
-void	ft_printf(char const *format, ...);
+int		ft_printf(char const *format, ...);
 
 #endif

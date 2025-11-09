@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 15:15:44 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 16:14:20 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 22:53:09 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ size_t	ft_printudec(va_list *args)
 	unsigned int udec;
 
 	udec = va_arg(*args, unsigned int);
-	ft_putbase_unsigned(udec, "0123456789");
-	return (2);
+	return (ft_putbase_unsigned(udec, "0123456789"));
 }

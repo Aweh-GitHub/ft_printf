@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 15:05:25 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 15:29:18 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 20:13:27 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ size_t	ft_printchar(va_list *args)
 
 	c = (char) va_arg(*args, int);
 	write(1, &c, 1);
-	return (2);
+	return (1);
 }

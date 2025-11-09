@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 16:05:08 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/09 16:05:55 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/09 19:43:30 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 size_t	ft_printpercent()
 {
 	write(1, "%", 1);
-	return (2);
+	return (1);
 }
