@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 15:11:13 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/13 16:03:43 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/13 16:08:07 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@ size_t	ft_printptr(va_list *args)
 	adress = (unsigned long long int) va_arg(*args, void *);
 	if (adress == 0)
 		return (write(1, "(nil)", 5));
-	write(1, "0x", 2);
-	return (2 + ft_putbase_unsigned(adress, "0123456789abcdef"));
+	return (write(1, "0x", 2) + ft_putbase_unsigned(adress, "0123456789abcdef"));
 }
