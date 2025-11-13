@@ -6,13 +6,14 @@
 #    By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/09 16:41:21 by thantoni          #+#    #+#              #
-#    Updated: 2025/11/09 17:43:10 by thantoni         ###   ########.fr        #
+#    Updated: 2025/11/12 20:46:59 by thantoni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
 CC = cc
+
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS =	ft_printf.c					\
