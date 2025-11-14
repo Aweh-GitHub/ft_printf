@@ -6,7 +6,7 @@
 /*   By: thantoni <thantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 13:25:54 by thantoni          #+#    #+#             */
-/*   Updated: 2025/11/13 14:35:44 by thantoni         ###   ########.fr       */
+/*   Updated: 2025/11/14 22:01:39 by thantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(char const *format, ...)
 	size_t	i;
 	size_t	write_count;
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	i = 0;
 	write_count = 0;
